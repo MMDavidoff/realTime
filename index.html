@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="types">
+      <img class="show-time" src="img/time.png" alt="" />
+      <img class="show-alarm" src="img/alarm.png" alt="" />
+      <img class="show-stopwatch" src="img/stopwatch.png" alt="" />
+      <img class="show-timer" src="img/timer.png" alt="" />
+    </div>
+    <div class="clock">
+      <div class="time">
+        <p></p>
+      </div>
+      <div class="day"></div>
+    </div>
+    <div class="alarm d-none">
+      <div class="alarm-content">
+        <h2>alarm</h2>
+        <input class="alarm-input" type="time" />
+      </div>
+    </div>
+    <div class="timer d-none">
+      <input class="display" type="number" value="0" />
+      <button class="timer-start">Start</button>
+      <button class="timer-stop d-none">Stop</button>
+    </div>
+    <div class="stopwatch d-none">
+      <div class="display">
+        <p class="min">00</p>
+        <p>:</p>
+        <p class="sec">00</p>
+      </div>
+      <div class="button">
+        <button class="start-stopwatch">start</button>
+        <button class="stop-stopwatch">stop</button>
+
+      </div>
+    </div>
+    <script src="time.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
